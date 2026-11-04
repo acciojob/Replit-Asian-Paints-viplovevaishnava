@@ -1,1 +1,52 @@
 /*  your css code here. If applicable */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(197, 197, 196);
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: cursive;
+            color: rgb(18, 16, 13);
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+            flex: 7;
+
+            height: 600px;
+
+        }
+
+        .grid-item {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+
+        .sidebar {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
