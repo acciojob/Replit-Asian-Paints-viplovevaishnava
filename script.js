@@ -15,6 +15,6 @@ form.addEventListener('submit', (event) => {
 form.addEventListener('reset', (event) => {
     event.preventDefault()
     gridItems.forEach((item) => {
-        item.style.backgroundColor = 'yellow'
+        item.style.backgroundColor = 'transparent'
     })
 })
