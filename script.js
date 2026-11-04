@@ -14,7 +14,5 @@ form.addEventListener('submit', (event) => {
 })
 form.addEventListener('reset', (event) => {
     event.preventDefault()
-    gridItems.forEach((item) => {
-        item.style.backgroundColor = 'transparent'
-    })
+    gridItems[blockInput.value - 1].style.backgroundColor = 'transparent'
 })
